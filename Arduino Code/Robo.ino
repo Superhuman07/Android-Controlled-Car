@@ -2,15 +2,16 @@
  * 
  */  
 
-
-
-
 int LmotorUp = 10; //initialising Arduino port 10 be be called as LmotorUp
 int LmotorDn = 11; //initialising Arduino port 11 be be called as LmotorDn
 int RmotorUp = 8;  //initialising Arduino port 8 be be called as RmotorUp
 int RmotorDn = 9;  //initialising Arduino port 9 be be called as RmotorDn
 int left = 6;
 int right = 12;
+
+
+
+
 void setup()
 {
   Serial.begin(9600);
