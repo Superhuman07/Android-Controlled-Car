@@ -61,14 +61,15 @@ void MoveF()
   // Telling user that the robot will move forward
   Serial.println("<Robot Name> Forward");
   
-  // We are writing a Digital HIGH to the upper left pin of the motor driver
+  // We are writing a Digital HIGH to the upper left pin of the motor driver for postive polarity of 5V
   digitalWrite(LmotorUp,HIGH); 
-  // We are writing a Digital LOW to the lower left pin of the motor driver
+  // We are writing a Digital LOW to the lower left pin of the motor driver for negative polarity of 0V
   digitalWrite(LmotorDn,LOW);
-  // We are writing a Digital HIGH to the upper right pin of the motor driver
+  // We are writing a Digital HIGH to the upper right pin of the motor driver for postive polarity of 5V
   digitalWrite(RmotorUp,HIGH); 
-  // We are writing a Digital HIGH to the lower right pin of the motor driver
+  // We are writing a Digital HIGH to the lower right pin of the motor driver for negative polarity of 0V
   digitalWrite(RmotorDn,LOW);
+  // For entering speed to the pins
   digitalWrite(left, 100);
   // We are writing a Digital LOW to the lower right pin of the motor driver
   digitalWrite(right, 100);
